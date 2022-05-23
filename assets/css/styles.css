@@ -3,4 +3,47 @@
 body {
   margin: 30px;
   font-family: "Poppins";
+  color: #fff;
+  background-color: #242a38;
+  background-image: linear-gradient(90deg, #242a38 0%, #4E586E 100%);
 }
+
+button {
+  border-radius: 12px;
+  padding: 10px 20px;
+  color:#fff;
+  border:0;
+  background-color: #F54864;
+  background-image: linear-gradient(90deg, #F54864 0%, #F78361 100%);
+}
+img {
+  width: 100%;
+  border: 1px solid rgb(125, 123, 123);
+  border-radius: 6px;
+}
+
+header {
+  max-width: 1000px;
+  margin: 40px auto;
+  border-bottom: 1px solid rgb(125, 123, 123);
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: span 3;
+  grid-gap: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+
+
