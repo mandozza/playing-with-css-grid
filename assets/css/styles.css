@@ -61,14 +61,31 @@ main div {
   overflow: hidden;
 }
 
-.short {
-  grid-row: span 1;
-}
-
 .tall {
   grid-row: span 2;
 }
 
 .footer{
   text-align: center;
+}
+
+@media screen and (max-width: 767px){
+  main{
+    grid-template-columns: 1fr;
+    max-width:400px;
+  }
+  nav a{
+  color: white;
+  font-size: 1.0rem;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px){
+  main{
+    grid-template-columns: 1fr 1fr;
+  }
 }
