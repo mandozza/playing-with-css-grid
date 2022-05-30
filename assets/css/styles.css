@@ -3,4 +3,72 @@
 body {
   margin: 30px;
   font-family: "Poppins";
+
+}
+
+nav{
+  background-color: steelblue;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  align-items: center;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+nav h1{
+  text-align: center;
+  font-style: italic;
+}
+nav h1 div:nth-child(1){
+  font-size: 2.0rem;
+  color: burlywood;
+  margin-bottom: 0;
+}
+
+nav h1 div:nth-child(2){
+  font-size: 1.5rem;
+  color: pink;
+  margin-top: -10px;
+}
+img{
+  width:100%;
+  height: 100%;
+}
+
+main{
+  background-color: #ccc;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 250px;
+  gap: 30px;
+}
+
+main div {
+  overflow: hidden;
+  background: #fff;
+  border-radius: 6px;
+  border: 16px solid #fff;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.05);
+}
+
+.short {
+  grid-row: span 1;
+}
+
+.tall {
+  grid-row: span 2;
+}
+
+.footer{
+  text-align: center;
 }
